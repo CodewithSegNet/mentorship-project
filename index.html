@@ -10,51 +10,76 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
 
 <body>
+
   <header id="nav-header">
-    <div class="container-fluid">
+   <div class="container-fluid">
       <nav class="navbar">
-        <h2 class="logo">snap</h2>
+        <img class="logo" src="/images/logo.svg" alt="">
         <ul class="links">
-          <li><a href="#" class="link-item">Features</a></li>
-          <li><a href="#" class="link-item">Company</a></li>
-          <li><a href="#" class="link-item">Careers</a></li>
+          <li><a href="#" class="link-item">Features <img class="drop-down" src="/images/icon-arrow-down.svg"></a>
+            <ul class="sub-links1">
+            <li><a href="#" class="link-item"><img class="drop-down" src="/images/icon-todo.svg" alt="">Todo list</a></li>
+          <li><a href="#" class="link-item"><img class="drop-down" src="/images/icon-calendar.svg" alt=""> Calender</a></li>
+          <li><a href="#" class="link-item"><img class="drop-down" src="/images/icon-reminders.svg" alt=""> Reminders</a></li>
+          <li><a href="#" class="link-item"><img class="drop-down" src="/images/icon-planning.svg" alt=""> Planning</a></li>
+        </ul>
+            </li>
+          <li><a href="#" class="link-item">Company <img class="drop-down" src="/images/icon-arrow-down.svg"></a>
+             <ul class="sub-links2">
+            <li><a href="#" class="link-item">History</a></li>
+          <li><a href="#" class="link-item">Our Team</a></li>
+          <li><a href="#" class="link-item">Blog</a></li>
+        </ul></li>
           <li><a href="#" class="link-item">Careers</a></li>
           <li><a href="#" class="link-item">About</a></li>
+          <div class="btn-list">
+            <button class="btn-primary">Login</button>
+            <button class="btn-secondary">Register</button>
+          </div>
         </ul>
-      <div class="btn-list">
-        <button class="trans-btn">Login</button>
-        <button class="btn">Register</button>
+    <div class="burger">
+      <div class="line1">
       </div>
-
-
-
+      <div class="line2">
+      </div>
+      <div class="line3">
+      </div>
+    </div>
       </nav>
     </div>
   </header>
 
-  <section>
-    <div class="content-container">
-      <div class=" content">
-  <h2>Make remote work</h2>
-  <p>  Get your team in sync, no matter your location. Streamline processes,
-    create team rituals, and watch productivity soar.
-    </p>
 
-    <button class="sub-btn">Learn more</button>
+
+<main id="section-container">
+    <div class="container-fluid">
+      <div class="mobile-img">
+        <img class="mobile-img" src="./images/image-hero-mobile.png">
       </div>
-  <img class="desktop-img"  src="./images/image-hero-Desktop.png">
-    <img class="mobile-img" src="./images/image-hero-mobile.png">
+      <div class="content">
+        <div class="write">
+          <h2>Make <br> remote work</h2>
+          <p>  Get your team in synwc, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+            </p>
+            <button class="sub-btn">Learn more</button>
+<div class="logos">
+  <img src="/images/client-databiz.svg" alt="">
+  <img  src="/images/client-audiophile.svg" alt="">
+  <img  src="/images/client-meet.svg" alt="">
+  <img  src="/images/client-maker.svg" alt="">
+</div>
+</div>
+<img class="her0" src="./images/image-hero-Desktop.png">
     </div>
-  </section>
+</main>
 
-
-
+<script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
